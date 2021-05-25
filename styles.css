@@ -103,8 +103,9 @@ body {
 
 /* Section-1  search bar */
 
-section {
-  margin: 2em;
+.section-1,
+.filter-section {
+  margin-left: 1.5em;
 }
 
 .icon {
@@ -145,6 +146,7 @@ input[type="text"] {
 input {
   border: 0;
   margin: 0.3em;
+  width: 12em;
   padding-left: 1em;
   outline: none;
   z-index: 2;
@@ -159,7 +161,7 @@ input {
   position: absolute;
   top: 0px;
   left: 30px;
-  width: 18.4em;
+  width: 16.4em;
   height: 92%;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
@@ -311,7 +313,7 @@ section h6 {
 .aside-bg-container {
   background-color: #f2f2f2;
 
-  padding: 0 2em 0.4em 2em;
+  padding: 0 1.5em 0.4em 1.5em;
 }
 
 .flex-header {
@@ -331,9 +333,9 @@ section h6 {
   display: flex;
   width: 100%;
   background-color: #fff;
-  margin-bottom: 2.2em;
+  margin-bottom: 1.2em;
   box-shadow: 1px 5px 10px rgb(226, 222, 222);
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 img {
@@ -409,6 +411,11 @@ img {
 
 /*************** Accommodations  **************/
 
+.main-flex-container {
+  margin: 0 1.5em;
+  margin-bottom: 2.5em;
+}
+
 .container-main {
   display: flex;
   flex-direction: column;
@@ -462,6 +469,11 @@ img {
   padding-top: 1em;
 }
 /********** Activities in Marseille ***********/
+
+.activities-section {
+  margin: 0 1.5em;
+  margin-bottom: 2em;
+}
 
 .third-section h2 {
   font-size: 1.45rem;
@@ -597,6 +609,12 @@ img {
     display: none;
   }
 
+  /* Most popular */
+
+  .aside-bg-container {
+    margin-bottom: 2em;
+  }
+
   /* gird accom */
 
   .grid-container {
@@ -628,6 +646,10 @@ img {
 @media (min-width: 900px) {
   /* *****search bar text */
 
+  .section-1 {
+    margin-bottom: 2em;
+  }
+
   .search-button-icon {
     display: none;
   }
@@ -643,6 +665,53 @@ img {
     font-weight: 600;
     cursor: pointer;
   }
+
+  /* ******* MP & Accom Grid ********** */
+
+  .container-MP-Accom {
+    margin-bottom: 2em;
+  }
+
+  /****** grid accom ******* */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 1em;
+    grid-column-gap: 2em;
+    margin-right: 2em;
+  }
+
+  .aside-bg-container {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-bottom: 2em;
+  }
+
+  /* ***********grid Activities in Marseille ********** */
+
+  .Marseille-image-text {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+
+  /* ************* Footer  *************/
+
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-flex ul {
+    margin-right: 12em;
+  }
+}
+
+/* ************* */
+
+@media (min-width: 1350px) {
   /******** Filter  *********/
 
   .flexbox-container {
@@ -687,71 +756,30 @@ img {
   /* ******* MP & Accom Grid ********** */
 
   .container-MP-Accom {
-    margin-bottom: -2em;
-  }
-
-  /****** grid accom ******* */
-  .grid-container {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 1em;
-    grid-column-gap: 2em;
+    display: flex;
   }
 
   .aside-bg-container {
     width: 60%;
-    margin: 0 auto;
-    border-radius: 25px;
-  }
-
-  /* ***********grid Activities in Marseille ********** */
-
-  .Marseille-image-text {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 2em;
-  }
-
-  /* ************* Footer  *************/
-
-  .footer-flex {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .footer-flex ul {
-    margin-right: 12em;
-  }
-}
-
-/* ************* */
-
-@media (min-width: 1100px) {
-  /* ******* MP & Accom Grid ********** */
-
-  .container-MP-Accom {
-    display: flex;
-    margin-left: 2em;
-  }
-
-  .aside-bg-container {
-    width: 60%;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: em;
+    margin-bottom: 2.5em;
     margin-right: 3em;
-    margin-left: -2.5em;
+    margin-left: -3.5em;
     padding-top: 1em;
     border-radius: 25px;
     order: -1;
   }
 
+  .aside-accom {
+    margin-bottom: 2em;
+  }
+
   .container-accom {
     background-color: #f2f2f2;
-    padding: 1em 5.5em 1.7em 2em;
+    padding: 1em 4.5em 1.7em 2em;
     margin-left: 0em;
     border-radius: 25px;
-    width: 80%;
+    width: 82%;
   }
 
   .grid-main {
